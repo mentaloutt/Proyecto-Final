@@ -1,0 +1,145 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(10px,auto);
+
+    align-items: stretch;
+}
+
+.element1{
+    grid-column: 1/3;
+    text-align-last: center;
+    
+}
+.element2{
+    grid-column: 1/3;
+    grid-template-rows: minmax(100px,auto);    
+}
+
+.element3{
+    grid-auto-rows: minmax(100px,auto);
+    grid-row: 1/9;
+    grid-column: 3/4;
+}
+.nested-grid2{
+    display:grid;
+    grid-template-rows: repeat(1, 1fr);
+}
+.nested-grid{
+    text-align-last: left;
+    align-items: stretch;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.centrar-lista ul, .centrar-lista ol{
+    text-align: left;
+    display: inline-block;
+
+}
+
+
+.grid div{
+    background: #ecf0f1;
+    padding: 1em;
+}
+
+.background-color-web{    
+    background-color: #000000;
+}
+
+.background-color-2{
+    background-color: #ecf0f1;
+
+}
+
+.text-color-white{
+    color: #ffffff;
+}
+.text-color-red{
+    color: #ff0000;
+}
+
+.background-img{
+    z-index: -9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0%;
+    background-image: url(images/grayscaleman2.png);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.margins{
+    position: absolute;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-left: 5em;
+}
+
+a, a:link, a:visited, a::after{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+a.text-color-white, a.text-color-white:after, a.text-color-white:visited{
+    color: #ffffff;
+}
+a.text-color-red, a.text-color-red:after, a.text-color-red:visited{
+    color: #ff0000;
+}
+
+
+.label-hello::after{
+    content: "Hola.";
+}
+
+.label-iam::after{
+    content: "Yo soy";
+}
+.label-iam:hover::after{
+    content: "Mi trabajo";
+}
+
+.label-lawrence::after{
+    content: "Norberto";
+}
+
+h1{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    
+}
+h2{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vmin;
+}
+h3{
+    text-align: center;
+    font-family: 'Roboto, sans-serif';
+}
+h4{
+    text-align: center;
+    font-family: 'Roboto, sans-serif';
+    font-size: 80%;
+}
+p{
+    
+    font-family: 'Roboto, sans-serif';
+}
+ul, ol{
+    
+    font-family: 'Roboto, sans-serif';
+}
+.font-size{
+    font-size: 15vmin;
+}
+.font-size2{
+    font-size: 2em;
+}
+
